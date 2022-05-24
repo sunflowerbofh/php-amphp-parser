@@ -1,0 +1,5 @@
+amphp-parser (1.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1011524).
+
+ -- Katharina Drexel <katharina.drexel@bfh.ch>  Wed, 04 May 2022 10:52:11 +0200

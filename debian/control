@@ -1,0 +1,33 @@
+Source: amphp-parser
+Section: php
+Priority: optional
+Maintainer: Katharina Drexel <katharina.drexel@bfh.ch>
+Build-Depends:
+ debhelper-compat (= 13),
+ phpab,
+ pkg-php-tools,
+Standards-Version: 4.6.1
+Homepage: https://github.com/amphp/parser
+Vcs-Browser: https://github.com/amphp/parser
+Vcs-Git: https://github.com/amphp/parser.git
+Rules-Requires-Root: no
+
+Package: php-amphp-parser
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${phpcomposer:Debian-require},
+Suggests:
+ ${phpcomposer:Debian-suggest},
+Replaces:
+ ${phpcomposer:Debian-replace},
+Breaks:
+ ${phpcomposer:Debian-conflict},
+Provides:
+ ${phpcomposer:Debian-provide},
+Description: Streaming generator parser
+ Amp is a non-blocking concurrency framework for PHP. It provides an event loop,
+ promises and streams as a base for asynchronous programming.
+ .
+ amphp/parser is a streaming parser for Amp.
+ .
